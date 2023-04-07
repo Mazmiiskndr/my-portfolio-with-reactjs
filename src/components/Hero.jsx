@@ -3,7 +3,7 @@ import { FaArrowAltCircleDown } from "react-icons/fa";
 import avatar from "../assets/avatar.png";
 import { SOCIAL } from "./data/Socials";
 import useScroll from "./hooks/UseScroll";
-import "./Hero.css"; 
+import "./Hero.css";
 
 const Hero = () => {
   const handleScroll = () => {
@@ -15,7 +15,7 @@ const Hero = () => {
   useScroll(handleScroll);
 
   return (
-    <section className="min-h-screen flex flex-col justify-start items-center p-5 text-center">
+    <section className="min-h-screen flex flex-col justify-start items-center text-center">
       <h2 className="text-5xl text-blue-600 uppercase font-bold ">
         Moch Azmi Iskandar
       </h2>
@@ -57,14 +57,14 @@ const Hero = () => {
           alt="avatar"
           className="rounded-xl w-48 
           h-60 md:w-48 object-cover object-top 
-          bg-gradient-to-b from-blue-600 pt-5 hover:scale-110"
+          bg-gradient-to-b from-blue-600 pt-5 hover:scale-110 duration-300 ease-in-out"
         />
         <a
           href="/resume.pdf"
           download={true}
           className="flex items-center 
         justify-center mt-10 bg-gradient-to-r from-blue-600 to-teal-500 
-        text-white py-2 rounded-lg hover:scale-110"
+        text-white py-2 rounded-lg hover:scale-110 duration-300"
         >
           Resume
         </a>

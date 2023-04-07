@@ -16,7 +16,7 @@ const Portfolio = () => {
             <div
               key={project.id}
               className="max-w-lg flex shadow-lg
-            shadow-gray-300 rounded-2xl overflow-hidden "
+            shadow-gray-300 rounded-2xl overflow-hidden hover:scale-110 duration-300"
             >
               <img src={project.image} alt={project.title} className="w-2/3" />
 
@@ -25,7 +25,8 @@ const Portfolio = () => {
               p-1"
               >
                 <h2>{project.title}</h2>
-                <a className="text-2xl cursor-pointer duration-150 hover:scale-150"
+                <a
+                  className="text-3xl cursor-pointer duration-150 hover:scale-150"
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -33,6 +34,7 @@ const Portfolio = () => {
                   <FaGithub />
                 </a>
                 <a
+                  className="text-2xl cursor-pointer duration-150 hover:scale-150"
                   href={project.demo}
                   target="_blank"
                   rel="noopener noreferrer"
