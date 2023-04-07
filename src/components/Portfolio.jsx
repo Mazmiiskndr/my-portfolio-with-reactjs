@@ -25,10 +25,18 @@ const Portfolio = () => {
               p-1"
               >
                 <h2>{project.title}</h2>
-                <a href={project.github}>
+                <a className="text-2xl cursor-pointer duration-150 hover:scale-150"
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaGithub />
                 </a>
-                <a href={project.demo}>
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaExternalLinkAlt />
                 </a>
               </div>

@@ -3,7 +3,6 @@ import Section from "./common/Section";
 import { ServicesData } from "./data/ServicesData";
 
 const Services = () => {
-
   return (
     <Section
       title="Services 👨‍💻"
